@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pet(name, age, id, a) {
+            this.name = name
+            this.age = age
+            this.id = id
+            this.a = a
+            
+            this.full = function () {
+                console.log(`이름:${name} 나이:${age} 종:${id}`)
+            }
+            
+            if (age >= 50) {
+                console.log(`${name}은 50세 이상인 ${age}세 입니다.`)
+            } else if (age < 50) {
+                console.log(`${name}은 50세 미만인 ${age}세 입니다.`)
+            }
+            
+            
+        }
+        
+        const pet = new Pet("달이", 12, "코숏", 20);
+        const pet2 = new Pet("별이", 8, "바보", 30);
+        const pet3 = new Pet("햇님", 7, "남자", 25);
+        const pet4 = new Pet("하늘", 15, "여자", 15);
+        
+        // console.log(pet2.a, pet.a, pet3.a, pet4.a)
+        
+        let pettotal = [pet.a, pet.name];
+        let pettotal2 = [pet2.a, pet2.name];
+        let pettotal3 = [pet3.a, pet3.name];
+        let pettotal4 = [pet4.a, pet4.name];
+        // console.log(pettotal)
+        // console.log(pettotal2)
+        // console.log(pettotal3)
+        // console.log(pettotal4)
+
+        
+        // let total = (pet.a, pet2.a, pet3.a, pet4.a)
+
+        let total = ([pettotal, pettotal2, pettotal3, pettotal4]);
+        console.log(total);
+        
+        console.log(typeof(total[0]))
+        for (const item of total) {
+            //[[20,달이] [30,별이] [25,햇님] [15,하늘]]
+            if (total < item) {
+                total = item
+                console.log(total)
+                console.log(`이들중 가장 무거운건 ${total[0]}kg ${total[1]}입니다.`)
+            }
+        }
+
+        
+        // pet.full()
+        // pet2.full()
+        // pet3.full()
+        // pet4.full()
+
+
+
+
+
+    </script>
+</body>
+</html>
