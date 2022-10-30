@@ -5,22 +5,23 @@
 
 /* 슬라이더 부분 */
 .slider {
-    background-color: blanchedalmond;
+    background-color: greenyellow;
     display: flex;
     margin: 0 auto;
     text-align: center;
     justify-content: space-between;
-    height: 580px;
+    height: 399.24px;
 }
 
 .slider__content {
     width: 1060px;
-    background-color: royalblue;    
+    /* background-color: royalblue; */
+    margin: 0 auto; 
 }
 
 /* 첫번째 섹션 */
 .first__section {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 1060px;
     height: 365px;
     margin: 0 auto;
@@ -46,7 +47,7 @@
 .first__title__p :nth-of-type(2) {
     font-size: 14px;
     text-align: left;
-    color: antiquewhite;
+    color: #777;
     margin-top: 30px;
 }
 
@@ -54,14 +55,14 @@
     float: right;
     width: 380px;
     height: 200px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 
 
 /* 두번째 섹션 */
 .second__section {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 1060px;
     height: 365px;
     margin: 0 auto;
@@ -86,13 +87,13 @@
     float: right;
     width: 380px;
     height: 200px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 
 /* 소셜 섹션 */
 .social {
-    background-color: gold;
+    /* background-color: gold; */
     margin: 0 auto;
     width: 1060px;
     height: 365px;
@@ -108,22 +109,9 @@
     font-size: 28px;
 }
 
-.second__slider__section {
-    background-color: blanchedalmond;
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: space-between;
-    height: 320px;
-}
-
-.second__slider__content {
-    width: 780px;
-    background-color: royalblue;    
-}
 
 .social > li > img {
-    background-color: green;
+    /* background-color: green; */
     height: 80px;
     width: 80px;
 }
@@ -132,50 +120,125 @@
     margin: 100px 0px 100px;
 }
 
+/* 세컨드 슬라이드 */
 
-html,
-body {
-  position: relative;
-  height: 100%;
+.second__slider__section {
+    background-color: blanchedalmond;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    height: 320px;
+    width: 1060px;
+    
 }
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.signature__menu {
+    background-color: blue;
+    width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.category {
+    background-color: aquamarine;
+    width: 100px;
+    text-align: center;
+    flex-direction: column;
 }
 
+.category > div {
+    margin: 60% 0% 50%;
+}
+
+
+
+
+
+.second__slider__content {
+    width: 960px;
+    /* background-color: royalblue;     */
+}
+/* footer */
+
+.footer__main {
+    background-color: aqua;
+    margin: 0 auto;
+    width: 1060px;
+    height: 370px;
+}
+
+
+
+/* swipe 관련 */
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 추천메뉴 1번 슬라이더 */
+.mySwiper1 {
+    overflow:hidden;
+    height: 320px;
+}
+
+.mySwiper1 img {
+    display: block;
+    object-fit: fill;
+    height: 100%;
+}
+
+.mySwiper1 > .swiper-wrapper > .swiper-slide {
+    flex-direction: column;
+    background-color: hotpink;
+    font-size: 0.8rem;
+}
+
+.swiper1__name {
+    height: 40px;
+    width: 100%;
+}
+
+.mySwiper1 > .swiper-wrapper > .swiper-slide :nth-last-of-type(2) {
+    width: 100%;
+    height: 160px;
+}
+
+.swiper1__p {
+    height: 120px;
+}
+
+
+/* 추천메뉴 2번 슬라이더 */
+.mySwiper2 {
+    overflow:hidden;
+    display: none;
+}
+
+/* 추천메뉴 3번 슬라이더 */
+.mySwiper3 {
+    overflow:hidden;
+    display: none;
 }
