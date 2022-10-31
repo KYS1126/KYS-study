@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7">
     <title>Document</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
 </head>
 <body>
     <!-- 헤더 -->
@@ -52,7 +52,7 @@
     <section>
         <div class="first__section">
             <div>
-                <p class="first__title"><span>--</span>How our story begins<span>--</span></p>
+                <p class="first__title"><span>-------------------------------</span>How our story begins<span>-------------------------------</span></p>
             </div>
             <div>
                 <p class="first__title__list">뉴욕에서 온 파인 캐쥬얼 레스토랑, 쉐이크쉑</p>
@@ -78,7 +78,7 @@
     <section>
         <div class="second__section">
             <div class="second__title">
-                <p><span>--</span>Stand for something good<span>--</span></p>
+                <p><span>-------------------------</span>Stand for something good<span>-------------------------</span></p>
             </div>
             <div class="second__list">
                 <div class="second__title__list">
@@ -92,74 +92,117 @@
                 </div>
             </div>
         </section>
-        
         <div class="second__slider">
-            <div class="signature__menu">추천메뉴</div>
+            <div class="signature__menu">--------------------------------signature menu--------------------------------</div>
             <section class="second__slider__section">
                 <div class="category">
-                    <div>
+                    <div id="bt1">
                         <button class="button1">비프</button>
                     </div>
-                    <div>
-                        <button>치킨</button>
+                    <div id="bt2">
+                        <button class="button2">치킨</button>
                     </div>
-                    <div>
-                        <button>쉐이크</button>
+                    <div id="bt3">
+                        <button class="button3">음료</button>
                     </div>
                 </div>
                 <div class="second__slider__content">
                     <!-- 1번슬라이더  -->
                     <div class="swiper1 mySwiper1">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="swiper1__name">빅맥</div>
-                            <div><img src="./IMG/4-1.png" alt=""></div>
-                            <div class="swiper1__p">100% 순 쇠고기 패티 두 장에 빅맥만의 특별한 소스.<br>
-                                입안에서 살살 녹는 치즈와 신선한 양상추, 양파, 그리고 피클까지.<br>
-                                50년 넘게 전 세계인의 입맛을 사로 잡은 버거의 대명사.</div>
-                        </div>
-                          <div class="swiper-slide">
-                            <div class="swiper1__name">1955버거</div>
-                            <div><img src="./IMG/4-2.png" alt=""></div>
-                            <div class="swiper1__p">113g 두툼한 순 쇠고기 패티,<br>
-                                특별한 1955 소스에 깊은 풍미의 그릴드 어니언까지!<br>
-                                맥도날드가 처음 생긴 1955년의 맛을 담은<br>
-                                영원한 오리지널 1955 버거</div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper1__name">더블불고기버거</div>
-                            <div><img src="./IMG/4-3.png" alt=""></div>
-                            <div class="swiper1__p">진한 불고기 소스의 패티가 두 장!<br>
+                            <div class="swiper-slide">
+                                <div class="swiper1__name">빅맥</div>
+                                <div><img src="./IMG/4-1.png" alt="빅맥"></div>
+                                <div class="swiper1__p">100% 순 쇠고기 패티 두 장에 빅맥만의 특별한 소스.<br>
+                                    입안에서 살살 녹는 치즈와 신선한 양상추, 양파, 그리고 피클까지.<br>
+                                    50년 넘게 전 세계인의 입맛을 사로 잡은 버거의 대명사.</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper1__name">1955버거</div>
+                                <div><img src="./IMG/4-2.png" alt="1955"></div>
+                                <div class="swiper1__p">113g 두툼한 순 쇠고기 패티,<br>
+                                    특별한 1955 소스에 깊은 풍미의 그릴드 어니언까지!<br>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper1__name">더블불고기버거</div>
+                                <div><img src="./IMG/4-3.png" alt="불고기"></div>
+                                <div class="swiper1__p">진한 불고기 소스의 패티가 두 장!<br>
                                 여기에 고소한 치즈와 마요네즈,<br>
                                 신선한 양상추를 곁들인 깊고 풍부한 맛.</div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="swiper1__name">베이컨 토마토 디럭스</div>
-                            <div><img src="./IMG/4-4.png" alt=""></div>
-                            <div class="swiper1__p">두 장의 100% 순 쇠고기 패티에 그릴에 구워<br>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper1__name">베이컨 토마토 디럭스</div>
+                                <div><img src="./IMG/4-4.png" alt=""베이컨></div>
+                                <div class="swiper1__p">두 장의 100% 순 쇠고기 패티에 그릴에 구워<br>
                                 더욱 고소한 1장의 베이컨을 얹고,<br>
-                                신선한 토마토와 양상추,<br>
-                                매콤달콤한 스위트 칠리 소스, 치즈, 마요네즈를 더해<br>
+                                신선한 토마토와 양상추,
+                                 마요네즈를 더해 
                                 더욱 풍부하고 신선한 맛의 프리미엄 버거.</div>
-                          </div>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                       </div>
                       <!-- 2번슬라이더 -->
                       <div class="swiper2 mySwiper2">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">
+                            <div class="swiper2__name">맥스파이시 상하이 버거</div>
+                            <div><img src="./IMG/5-1.png" alt="상하이"></div>
+                            <div class="swiper2__p">매콤한 시즈닝을 입힌 100% 닭가슴 통살 위에<br>
+                                아삭아삭한 양상추와 신선한 토마토~<br>
+                                겉은 바삭, 속은 부드러운 치킨 패티의 매콤함으로<br>
+                                입맛도 기분도 화끈하게!</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper2__name">맥치킨</div>
+                            <div><img src="./IMG/5-2.png" alt="맥치킨"></div>
+                            <div class="swiper2__p">바삭한 치킨 패티, 고소한 화이트 마요 소스와<br>
+                                아삭한 양상추가 함께!<br>
+                                더 업그레이드된 맛으로 돌아온 맥치킨</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper2__name">맥치킨 모짜렐라</div>
+                            <div><img src="./IMG/5-3.png" alt="모짜렐라"></div>
+                            <div class="swiper2__p">든든한 맥치킨에 골든 모짜렐라 치즈 스틱 2개와<br>
+                                매콤한 아라비아따 소스를 더해<br>
+                                강렬하게 재탄생한 맥치킨 모짜렐라!</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper2__name">슈슈 버거</div>
+                            <div><img src="./IMG/5-4.png" alt="슈슈"></div>
+                            <div class="swiper2__p">탱~글한 통새우살 가득~ 슈슈 버거!</div>
+                          </div>
                         </div>
                         <div class="swiper-pagination"></div>
                       </div>
                       <!-- 3번슬라이더 -->
                       <div class="swiper3 mySwiper3">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">
+                            <div class="swiper3__name">아이스 바닐라 라떼</div>
+                            <div><img src="./IMG/6-1.png" alt="바닐라"></div>
+                            <div class="swiper3__p">바로 내린 100% 친환경 커피의 진한 맛과 향,<br>
+                                1A등급 우유, 그리고 천연 바닐라 향으로 달콤함까지!</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper3__name">아이스 카페라떼</div>
+                            <div><img src="./IMG/6-2.png" alt=""></div>
+                            <div class="swiper3__p">바로 내린 100% 친환경 커피가 신선한 우유를 만나<br>
+                                더 신선하고 부드럽게!</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper3__name">아이스 아메리카노</div>
+                            <div><img src="./IMG/6-3.png" alt=""></div>
+                            <div class="swiper3__p">바로 내린 100% 친환경 커피로<br>
+                                더 신선하게! 더 풍부하게!</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper3__name">에스프레소</div>
+                            <div><img src="./IMG/6-4.png" alt=""></div>
+                            <div class="swiper3__p">바로 내린 100% 친환경 에스프레소
+                            </div>
+                          </div>
                         </div>
                         <div class="swiper-pagination"></div>
                       </div>
@@ -169,7 +212,7 @@
 
         <!-- 세번째 섹션 -->
     <section class="cocial section">
-        <p class="social__title"><span>--</span>Let’s get social<span>--</span></p>
+        <p class="social__title"><span>--------------------------------</span>Let’s get social<span>--------------------------------</span></p>
         <ul class="social">
             <li class="social__li">
                 <a href="https://ko-kr.facebook.com/shakeshackkorea/" target="_blank"><img src="./IMG/3-1.png" alt="페이스북"></a>
@@ -238,10 +281,10 @@
             </div> -->
         </div>
     </footer>
-
+<script src="./jquery-3.6.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./css/swiper.js"></script>
-
+<script src="./css/main.js"></script>
 
 </body>
 </html>
