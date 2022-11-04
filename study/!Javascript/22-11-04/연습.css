@@ -1,0 +1,30 @@
+.html {
+  width: 400px;
+  margin: 0 auto;
+  background-color: gray;
+  font-size: 15px;
+  height: 800px;
+  /* text-align: center; */
+}
+
+h1 {
+  font-size: 3rem;
+  color: green;
+  text-align: center;
+}
+
+label {
+  text-align: left;
+}
+
+.error {
+  color: red;
+}
+
+.html > div {
+  margin-top: 15px;
+}
+
+.div__id > .error {
+  display: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        margin: 0 auto;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="box1">
+          <span id="span1" onclick="ToggleS()">메뉴1</span>
+          <ul class="ul1">
+            <li>일번</li>
+            <li>이번</li>
+            <li>삼번</li>
+          </ul>
+        </div>
+        <div class="box2">
+          <span id="span2">메뉴1</span>
+          <ul class="ul2">
+            <li>일번</li>
+            <li>이번</li>
+            <li>삼번</li>
+          </ul>
+        </div>
+        <div class="box3">
+          <span id="span3">메뉴1</span>
+          <ul class="ul3">
+            <li>일번</li>
+            <li>이번</li>
+            <li>삼번</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+      //   function ToggleS() {
+      //     $(".ul1").slideToggle();
+      //   }
+      $("#span1").click(function () {
+        $(".ul1").slideToggle();
+      });
+      $("#span2").click(function () {
+        $(".ul2").slideToggle();
+      });
+      $("#span3").click(function () {
+        $(".ul3").slideToggle();
+      });
+    </script>
+  </body>
+</html>

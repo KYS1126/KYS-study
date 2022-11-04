@@ -8,6 +8,25 @@ const backbt1 = document.querySelector('#bt1')
 const backbt2 = document.querySelector('#bt2')
 const backbt3 = document.querySelector('#bt3')
 
+
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: 'bullets'
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay:3000,
+    disableOnInteraction: false
+  },
+  speed: 800,
+  loop:true,
+});
+
 var swiper1 = new Swiper(".mySwiper1", {
     loop:true,
     slidesPerView: 4,
